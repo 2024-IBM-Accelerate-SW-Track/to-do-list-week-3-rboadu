@@ -12,6 +12,7 @@ class Home extends Component {
     };
   }
 
+
   // the deleteTodo function simply creates a new array that removes the todo item selected from the user from the list
   // and then updates the state with the new list.
   deleteTodo = (id) => {
