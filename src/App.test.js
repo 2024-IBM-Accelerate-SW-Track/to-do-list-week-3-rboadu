@@ -4,13 +4,11 @@ import App from './App';
 
 let container = null;
 beforeEach(() => {
-  // setup a DOM element as a render target
   container = document.createElement("div");
   document.body.appendChild(container);
 });
 
 afterEach(() => {
-  // cleanup on exiting
   unmountComponentAtNode(container);
   container.remove();
   container = null;
@@ -29,5 +27,5 @@ test('test that new-item-button is a button', () => {
 test('test that new-item-input is an input ', () => {
   render(<App/>, container);
   const element = screen.getByTestId('new-item-input');
-  expect(element.outerHTML.toLowerCase().includes("input")).toBe(true)
+  expect(element.innerHTML.toLowerCase().includes("input")).toBe(true)
 });

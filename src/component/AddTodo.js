@@ -12,7 +12,7 @@ class AddTodo extends Component {
       due: null,
       date: ""
     };
-    
+  
   }
   // The handleChange function updates the react state with the new input value provided from the user and the current date/time.
   // "event" is the defined action a user takes. In this case, the event is triggered when the user types something
@@ -86,3 +86,4 @@ class AddTodo extends Component {
 }
 
 export default AddTodo;
+
